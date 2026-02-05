@@ -1,0 +1,79 @@
+@startuml InsureTech_C4_OSAGO
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+
+title InsureTech — Диаграмма контейнеров (ОСАГО + Event-Driven)
+
+Person(client, "Клиент", "Клиент")
+
+System_Ext(payment, "Платёжный сервис", "Внешний платёжный сервис для оплаты страховок")
+System_Ext(partners, "Системы партнёров", "Системы партнёров, интегрирующие страховые услуги в свои продукты")
+System_Ext(ins_companies, "Системы страховых компаний", "Предоставляют API для тарифов, андеррайтинга и оформления страховых продуктов")
+
+System_Boundary(insuretech, "InsureTech Prod") {
+
+    Container(web, "InsureTech Web", "JavaScript, React", "Веб-приложение InsureTech")
+
+    Container(core_app, "core-app", "Kotlin, SpringBoot", "Монолитное приложение:\n- страховые продукты и тарифы\n- оформление страховок\n- заявки на ОСАГО")
+
+    ContainerDb(core_db, "core-db", "PostgreSQL", "Тарифы, заявки клиентов")
+
+    Container(client_info, "client-info", "Kotlin, SpringBoot", "Сервис учёта клиентских данных")
+    ContainerDb(client_info_db, "client-info-db", "PostgreSQL", "Данные клиентов")
+
+    Container(product_agg, "ins-product-aggregator", "Kotlin, SpringBoot", "Сервис интеграции со страховыми компаниями.\nПубликует продукты и тарифы в Kafka")
+
+    Container(settlement, "ins-comp-settlement", "Kotlin, SpringBoot", "Сервис взаиморасчётов со страховыми компаниями")
+    ContainerDb(settlement_db, "ins-comp-settlement-db", "PostgreSQL", "Оформленные страховки, условия взаиморасчётов")
+
+    Container(osago_agg, "osago-aggregator", "Kotlin, SpringBoot", "Сервис агрегации предложений ОСАГО.\nОтправляет заявки в страховые компании,\nопрашивает решения, возвращает результаты")
+    ContainerDb(osago_db, "osago-aggregator-db", "PostgreSQL", "Состояние заявок ОСАГО и полученные предложения")
+
+    ContainerQueue(kafka, "Event Streaming", "Apache Kafka", "Брокер сообщений")
+}
+
+' === Клиент ===
+Rel(client, web, "Использует")
+
+' === Web -> сервисы ===
+Rel(web, core_app, "Тарифы, заявки на страховки", "REST")
+Rel(web, core_app, "Предложения ОСАГО в реальном времени", "WebSocket")
+Rel(web, client_info, "Данные клиентов", "REST")
+Rel(web, payment, "Оплата страховок (redirect)", "HTTP")
+
+' === core-app ===
+Rel(core_app, core_db, "Работа с данными", "TCP")
+Rel(core_app, client_info, "Данные клиентов", "REST")
+Rel(core_app, payment, "Оплата страховок", "HTTP")
+
+' === client-info ===
+Rel(client_info, client_info_db, "Работа с данными", "TCP")
+
+' === Партнёры (Rate Limiting) ===
+Rel(partners, core_app, "Оформление страховок\n[Rate Limiting]", "REST")
+
+' === ins-product-aggregator ===
+Rel(product_agg, ins_companies, "Получение продуктов и тарифов", "REST / SOAP / GraphQL")
+Rel(product_agg, kafka, "Публикация продуктов и тарифов", "publish")
+
+' === Event-Driven: потребление из Kafka ===
+Rel(core_app, kafka, "consume: продукты/тарифы", "consume")
+Rel(settlement, kafka, "consume: продукты/тарифы + страховки", "consume")
+Rel(core_app, kafka, "publish: оформленные страховки", "publish")
+
+' === ins-comp-settlement ===
+Rel(settlement, settlement_db, "Работа с данными", "TCP")
+Rel(settlement, ins_companies, "Передача данных для взаиморасчётов", "REST / SOAP / GraphQL")
+
+' === ОСАГО: core-app <-> osago-aggregator через Kafka ===
+Rel(core_app, kafka, "publish: заявка на ОСАГО", "publish")
+Rel(osago_agg, kafka, "consume: заявки на ОСАГО", "consume")
+Rel(osago_agg, kafka, "publish: предложения ОСАГО", "publish")
+Rel(core_app, kafka, "consume: предложения ОСАГО", "consume")
+
+' === osago-aggregator -> страховые компании ===
+Rel(osago_agg, ins_companies, "Создание заявки + получение предложения\n[Timeout 60s] [Retry] [Circuit Breaker]", "REST")
+Rel(osago_agg, osago_db, "Работа с данными", "TCP")
+
+@enduml

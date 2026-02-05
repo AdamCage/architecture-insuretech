@@ -1,0 +1,69 @@
+@startuml InsureTech_C4_Event_Driven
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+
+title InsureTech — Диаграмма контейнеров (Event-Driven)
+
+Person(client, "Клиент", "Клиент")
+
+System_Ext(payment, "Платёжный сервис", "Внешний платёжный сервис, через который осуществляется оплата страховок")
+System_Ext(partners, "Системы партнёров", "Системы партнёров, интегрирующие страховые услуги в свои продукты")
+System_Ext(ins_companies, "Системы страховых компаний", "Предоставляют API для получения актуальных тарифов, андеррайтинга и оформления страховых продуктов")
+
+System_Boundary(insuretech, "InsureTech Prod") {
+
+    Container(web, "InsureTech Web", "JavaScript, React", "Веб-приложение InsureTech")
+
+    Container(core_app, "core-app", "Kotlin, SpringBoot", "Монолитное приложение:\n- отображает данные о доступных страховых продуктах\n- оформляет новые страховки\n- отображает информацию о купленных страховках")
+
+    ContainerDb(core_db, "core-db", "PostgreSQL", "Хранение тарифов страховых компаний и заявок клиентов на страховые продукты")
+
+    Container(client_info, "client-info", "Kotlin, SpringBoot", "Сервис для учёта клиентских данных")
+
+    ContainerDb(client_info_db, "client-info-db", "PostgreSQL", "Хранение данных клиентов: ФИО, телефон, паспорт и др.")
+
+    Container(product_agg, "ins-product-aggregator", "Kotlin, SpringBoot", "Сервис интеграции со страховыми компаниями.\nПолучает информацию по продуктам и тарифам.\nПубликует изменения в Kafka")
+
+    Container(settlement, "ins-comp-settlement", "Kotlin, SpringBoot", "Сервис взаиморасчётов со страховыми компаниями")
+
+    ContainerDb(settlement_db, "ins-comp-settlement-db", "PostgreSQL", "Хранение данных об оформленных страховках и условиях взаиморасчётов")
+
+    ContainerQueue(kafka, "Event Streaming", "Apache Kafka", "Брокер сообщений для асинхронного обмена данными между сервисами")
+}
+
+' --- Связи клиента ---
+Rel(client, web, "Использует")
+
+' --- Web -> сервисы ---
+Rel(web, core_app, "1. Получение тарифов\n2. Создание заявок на страховки", "REST")
+Rel(web, client_info, "Получение / сохранение информации о клиентах", "REST")
+Rel(web, payment, "Проведение оплаты за страховки (redirect)", "HTTP")
+
+' --- core-app ---
+Rel(core_app, core_db, "Работа с данными", "TCP")
+Rel(core_app, client_info, "Получение / сохранение информации о клиентах", "REST")
+Rel(core_app, payment, "Проведение оплаты за страховки", "HTTP")
+
+' --- client-info ---
+Rel(client_info, client_info_db, "Работа с данными", "TCP")
+
+' --- Партнёры ---
+Rel(partners, core_app, "Оформление страховок", "REST")
+
+' --- ins-product-aggregator ---
+Rel(product_agg, ins_companies, "Получение информации по продуктам и тарифам", "REST / SOAP / GraphQL")
+Rel(product_agg, kafka, "Публикация информации по продуктам и тарифам", "publish")
+
+' --- Event-Driven: потребление из Kafka ---
+Rel(core_app, kafka, "Потребление информации по продуктам и тарифам", "consume")
+Rel(settlement, kafka, "Потребление: продукты/тарифы + оформленные страховки", "consume")
+
+' --- core-app публикует оформленные страховки ---
+Rel(core_app, kafka, "Публикация информации об оформленных страховках", "publish")
+
+' --- ins-comp-settlement ---
+Rel(settlement, settlement_db, "Работа с данными", "TCP")
+Rel(settlement, ins_companies, "Передача данных для взаиморасчётов", "REST / SOAP / GraphQL")
+
+@enduml

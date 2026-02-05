@@ -1,0 +1,33 @@
+@startuml InsureTech_as_is
+
+
+title InsureTech — Технологическая архитектура (AS-IS)
+
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam rectangle {
+    BackgroundColor<<az>> #E8F0FE
+    BorderColor<<az>> #5282FF
+    BackgroundColor<<k8s>> #E8F5E9
+    BorderColor<<k8s>> #4CAF50
+    BackgroundColor<<vm>> #FFF3E0
+    BorderColor<<vm>> #FF9800
+}
+
+actor "Браузер\nпользователя" as user
+
+rectangle "Зона доступности 1" <<az>> {
+
+    rectangle "Kubernetes cluster 1" <<k8s>> {
+        node "InsureTech\nnamespace" as ns1
+    }
+
+    rectangle "VM 1" <<vm>> {
+        database "PostgreSQL\n(master)" as pg1
+    }
+}
+
+user --> ns1 : HTTP
+ns1 --> pg1 : TCP
+
+@enduml

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1490px" preserveAspectRatio="none" style="width:850px;height:1490px;" version="1.1" viewBox="0 0 850 1490" width="850px" zoomAndPan="magnify"><defs><filter height="300%" id="f14aos68v1q5si" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="Arial" font-size="18" lengthAdjust="spacing" textLength="441" x="198" y="16.8838">InsureTech — Технологическая архитектура (TO-BE)</text><!--MD5=[4a5ddeaa2a2b270014174732b546981f]
+cluster Зона доступности 1 (ru-central1-a)--><rect fill="#E8F0FE" filter="url(#f14aos68v1q5si)" height="473" style="stroke:#5282FF;stroke-width:1.5;" width="257" x="7" y="449.1982"/><text fill="#000000" font-family="Arial" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="31" x="120" y="464.3301">«az»</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="241" x="15" y="480.4287">Зона доступности 1 (ru-central1-a)</text><!--MD5=[e4c07127e7480941dd045e4fdd262f35]
+cluster Kubernetes cluster 1--><rect fill="#E8F5E9" filter="url(#f14aos68v1q5si)" height="164" style="stroke:#4CAF50;stroke-width:1.5;" width="164" x="76" y="508.1982"/><text fill="#000000" font-family="Arial" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="39" x="138.5" y="523.3301">«k8s»</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="148" x="84" y="539.4287">Kubernetes cluster 1</text><!--MD5=[a0b304744ad8b61525a5c34cc37fc8ae]
+cluster VM 1--><rect fill="#FFF3E0" filter="url(#f14aos68v1q5si)" height="163" style="stroke:#FF9800;stroke-width:1.5;" width="130" x="110" y="735.1982"/><text fill="#000000" font-family="Arial" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="33" x="158.5" y="750.3301">«vm»</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="34" x="158" y="766.4287">VM 1</text><!--MD5=[79dd55fdb171b86a00a341654b522ff1]
+cluster Зона доступности 2 (ru-central1-b)--><rect fill="#E8F0FE" filter="url(#f14aos68v1q5si)" height="473" style="stroke:#5282FF;stroke-width:1.5;" width="258" x="288" y="449.1982"/><text fill="#000000" font-family="Arial" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="31" x="401.5" y="464.3301">«az»</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="242" x="296" y="480.4287">Зона доступности 2 (ru-central1-b)</text><!--MD5=[789a6e0a92a122c6c46255abc089d009]
+cluster Kubernetes cluster 2--><rect fill="#E8F5E9" filter="url(#f14aos68v1q5si)" height="164" style="stroke:#4CAF50;stroke-width:1.5;" width="164" x="313" y="508.1982"/><text fill="#000000" font-family="Arial" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="39" x="375.5" y="523.3301">«k8s»</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="148" x="321" y="539.4287">Kubernetes cluster 2</text><!--MD5=[1b128de66f7170bf2bfc97fd0c28aae8]
+cluster VM 2--><rect fill="#FFF3E0" filter="url(#f14aos68v1q5si)" height="163" style="stroke:#FF9800;stroke-width:1.5;" width="144" x="316" y="735.1982"/><text fill="#000000" font-family="Arial" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="33" x="371.5" y="750.3301">«vm»</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="34" x="371" y="766.4287">VM 2</text><!--MD5=[00b1fd2c1de1d09254cd9f7e69b492e6]
+cluster Зона доступности 3 (ru-central1-d)--><rect fill="#E8F0FE" filter="url(#f14aos68v1q5si)" height="473" style="stroke:#5282FF;stroke-width:1.5;" width="258" x="580" y="449.1982"/><text fill="#000000" font-family="Arial" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="31" x="693.5" y="464.3301">«az»</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="242" x="588" y="480.4287">Зона доступности 3 (ru-central1-d)</text><!--MD5=[695905b7a724470c8a9724e52e36873f]
+cluster Kubernetes cluster 3--><rect fill="#E8F5E9" filter="url(#f14aos68v1q5si)" height="164" style="stroke:#4CAF50;stroke-width:1.5;" width="164" x="614" y="508.1982"/><text fill="#000000" font-family="Arial" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="39" x="676.5" y="523.3301">«k8s»</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="148" x="622" y="539.4287">Kubernetes cluster 3</text><!--MD5=[0af8a89f53ce6ca5fe6e1e5e6ffb3761]
+cluster VM 3--><rect fill="#FFF3E0" filter="url(#f14aos68v1q5si)" height="163" style="stroke:#FF9800;stroke-width:1.5;" width="152" x="620" y="735.1982"/><text fill="#000000" font-family="Arial" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="33" x="679.5" y="750.3301">«vm»</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="34" x="679" y="766.4287">VM 3</text><!--MD5=[8fb4f905147ca31c25b1e567ee08a5b2]
+entity cdn--><path d="M736.5887,287.2638 C738.7795,282.3255 742.8649,280.9897 747.0236,284.9583 C750.7123,277.2625 756.0463,276.9947 760.6498,284.1171 C764.2333,279.0235 768.3537,278.8653 771.9239,284.1317 C775.2635,278.5101 779.9325,277.9855 784.0309,283.291 C788.3322,278.4887 791.9251,279.3465 795.0721,284.5632 C798.1863,279.0069 802.1536,278.7139 805.9411,283.8807 C810.8539,278.7032 815.6476,279.9916 818.5731,286.1043 C822.3616,280.1837 827.2383,279.6038 831.1889,285.9375 C839.1535,287.847 841.7165,293.6995 837.1872,300.6892 C842.3927,308.6416 839.3799,316.9658 829.0628,317.3477 C825.8808,323.0646 821.9515,323.29 818.1773,317.9297 C815.8042,324.0189 810.5342,325.8171 806.0485,320.1 C804.3043,325.3067 799.5039,326.5299 795.7947,322.2165 C792.9645,329.352 786.3298,330.4239 782.0286,323.675 C777.4278,327.6336 772.1708,327.1754 770.9523,320.2371 C766.9869,325.4865 762.8793,325.9004 758.7236,320.4547 C754.2443,324.6505 750.3647,325.2465 747.3794,318.8541 C743.5486,323.3361 739.5683,323.4685 737.1748,317.4565 C727.6655,314.4418 728.5102,306.5542 734.7313,301.1782 C728.6736,296.1311 729.8671,290.6051 736.5887,287.2638 " fill="#FFFFFF" filter="url(#f14aos68v1q5si)" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="80" x="742" y="305.3301">Yandex CDN</text><!--MD5=[bb306c58084cb68407bb59b29a7b0190]
+entity ns1--><polygon fill="#FEFECE" filter="url(#f14aos68v1q5si)" points="110.5,604.1982,120.5,594.1982,223.5,594.1982,223.5,646.3955,213.5,656.3955,110.5,656.3955,110.5,604.1982" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="213.5" x2="223.5" y1="604.1982" y2="594.1982"/><line style="stroke:#000000;stroke-width:1.5;" x1="110.5" x2="213.5" y1="604.1982" y2="604.1982"/><line style="stroke:#000000;stroke-width:1.5;" x1="213.5" x2="213.5" y1="604.1982" y2="656.3955"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="71" x="125.5" y="627.3301">InsureTech</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="73" x="125.5" y="643.4287">namespace</text><!--MD5=[94c6fe41003f2536a433bd55dc40e7a5]
+entity pg_master--><path d="M126.5,831.1982 C126.5,821.1982 175,821.1982 175,821.1982 C175,821.1982 223.5,821.1982 223.5,831.1982 L223.5,872.3955 C223.5,882.3955 175,882.3955 175,882.3955 C175,882.3955 126.5,882.3955 126.5,872.3955 L126.5,831.1982 " fill="#FEFECE" filter="url(#f14aos68v1q5si)" style="stroke:#000000;stroke-width:1.5;"/><path d="M126.5,831.1982 C126.5,841.1982 175,841.1982 175,841.1982 C175,841.1982 223.5,841.1982 223.5,831.1982 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="77" x="136.5" y="858.3301">PostgreSQL</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="53" x="136.5" y="874.4287">(Master)</text><!--MD5=[1fe0a35403d575f56231ea1a4df2738e]
+entity ns2--><polygon fill="#FEFECE" filter="url(#f14aos68v1q5si)" points="329.5,604.1982,339.5,594.1982,442.5,594.1982,442.5,646.3955,432.5,656.3955,329.5,656.3955,329.5,604.1982" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="432.5" x2="442.5" y1="604.1982" y2="594.1982"/><line style="stroke:#000000;stroke-width:1.5;" x1="329.5" x2="432.5" y1="604.1982" y2="604.1982"/><line style="stroke:#000000;stroke-width:1.5;" x1="432.5" x2="432.5" y1="604.1982" y2="656.3955"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="71" x="344.5" y="627.3301">InsureTech</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="73" x="344.5" y="643.4287">namespace</text><!--MD5=[af15fcfbca3d30270cd2847a7ae43676]
+entity pg_sync--><path d="M332,831.1982 C332,821.1982 388,821.1982 388,821.1982 C388,821.1982 444,821.1982 444,831.1982 L444,872.3955 C444,882.3955 388,882.3955 388,882.3955 C388,882.3955 332,882.3955 332,872.3955 L332,831.1982 " fill="#FEFECE" filter="url(#f14aos68v1q5si)" style="stroke:#000000;stroke-width:1.5;"/><path d="M332,831.1982 C332,841.1982 388,841.1982 388,841.1982 C388,841.1982 444,841.1982 444,831.1982 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="77" x="342" y="858.3301">PostgreSQL</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="92" x="342" y="874.4287">(Sync Replica)</text><!--MD5=[69b744f45b39be6690902b7365557a49]
+entity ns3--><polygon fill="#FEFECE" filter="url(#f14aos68v1q5si)" points="638.5,604.1982,648.5,594.1982,751.5,594.1982,751.5,646.3955,741.5,656.3955,638.5,656.3955,638.5,604.1982" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="741.5" x2="751.5" y1="604.1982" y2="594.1982"/><line style="stroke:#000000;stroke-width:1.5;" x1="638.5" x2="741.5" y1="604.1982" y2="604.1982"/><line style="stroke:#000000;stroke-width:1.5;" x1="741.5" x2="741.5" y1="604.1982" y2="656.3955"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="71" x="653.5" y="627.3301">InsureTech</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="73" x="653.5" y="643.4287">namespace</text><!--MD5=[ec9e2839aac71c43640198aa32fbd071]
+entity pg_async--><path d="M636.5,831.1982 C636.5,821.1982 696,821.1982 696,821.1982 C696,821.1982 755.5,821.1982 755.5,831.1982 L755.5,872.3955 C755.5,882.3955 696,882.3955 696,882.3955 C696,882.3955 636.5,882.3955 636.5,872.3955 L636.5,831.1982 " fill="#FEFECE" filter="url(#f14aos68v1q5si)" style="stroke:#000000;stroke-width:1.5;"/><path d="M636.5,831.1982 C636.5,841.1982 696,841.1982 696,841.1982 C696,841.1982 755.5,841.1982 755.5,831.1982 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="77" x="646.5" y="858.3301">PostgreSQL</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="99" x="646.5" y="874.4287">(Async Replica)</text><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><ellipse cx="584" cy="34.6982" fill="#FEFECE" filter="url(#f14aos68v1q5si)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M584,42.6982 L584,69.6982 M571,50.6982 L597,50.6982 M584,69.6982 L571,84.6982 M584,69.6982 L597,84.6982 " fill="none" filter="url(#f14aos68v1q5si)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="54" x="538" y="103.3301">Браузер</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="92" x="538" y="119.4287">пользователя</text><!--MD5=[e9b9a1fb5c2eb8b368965da252d1b6d4]
+entity alb--><polygon fill="#FEFECE" filter="url(#f14aos68v1q5si)" points="305,279.1982,315,269.1982,467,269.1982,467,321.3955,457,331.3955,305,331.3955,305,279.1982" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="457" x2="467" y1="279.1982" y2="269.1982"/><line style="stroke:#000000;stroke-width:1.5;" x1="305" x2="457" y1="279.1982" y2="279.1982"/><line style="stroke:#000000;stroke-width:1.5;" x1="457" x2="457" y1="279.1982" y2="331.3955"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="120" x="320" y="302.3301">Yandex Application</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="122" x="320" y="318.4287">Load Balancer (L7)</text><path d="M502,213.1982 L502,296.1982 L467.19,300.1982 L502,304.1982 L502,387.6343 A0,0 0 0 0 502,387.6343 L692,387.6343 A0,0 0 0 0 692,387.6343 L692,223.1982 L682,213.1982 L502,213.1982 A0,0 0 0 0 502,213.1982 " fill="#FBFB77" filter="url(#f14aos68v1q5si)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M682,213.1982 L682,223.1982 L692,223.1982 L682,213.1982 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="88" x="508" y="230.3921">Health Check:</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="112" x="508" y="245.3408">HTTP GET /healthz</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="102" x="508" y="260.2896">Интервал: 10 сек</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="88" x="508" y="275.2383">Таймаут: 5 сек</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="141" x="508" y="290.187">Порог отказа: 3 ошибки</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="0" x="512" y="305.1357"/><text fill="#000000" font-family="Arial" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="140" x="508" y="320.0845">Фейловер-стратегия:</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="169" x="508" y="335.0332">Active-Active между зонами.</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="127" x="508" y="349.9819">При отказе зоны ALB</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="141" x="508" y="364.9307">перенаправляет трафик</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="106" x="508" y="379.8794">в здоровые зоны.</text><path d="M42,969.1982 L42,1128.6855 A0,0 0 0 0 42,1128.6855 L308,1128.6855 A0,0 0 0 0 308,1128.6855 L308,979.1982 L298,969.1982 L179,969.1982 L175,882.3182 L171,969.1982 L42,969.1982 A0,0 0 0 0 42,969.1982 " fill="#FBFB77" filter="url(#f14aos68v1q5si)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M298,969.1982 L298,979.1982 L308,979.1982 L298,969.1982 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="46" x="48" y="986.3921">Patroni</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="112" x="98" y="986.3921">— автоматический</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="118" x="48" y="1001.3408">failover PostgreSQL.</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="0" x="52" y="1016.2896"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="88" x="48" y="1031.2383">RPO ≤ 15 мин:</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="204" x="48" y="1046.187">- синхронная репликация в зону 2</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="245" x="48" y="1061.1357">- автоматические бэкапы каждые 15 мин</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="0" x="52" y="1076.0845"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="86" x="48" y="1091.0332">RTO ≤ 45 мин:</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="193" x="48" y="1105.9819">- автоматическое переключение</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="132" x="56" y="1120.9307">мастера через Patroni</text><!--MD5=[14d82cf9cede7842874d2f8322d81288]
+link ns1 to pg_master--><path d="M165.24,656.4582 C164.73,666.5482 164.25,677.8582 164,688.1982 C163.67,701.9682 163.43,705.4282 164,719.1982 C165.37,752.0282 168.66,789.3582 171.29,815.8282 " fill="none" id="ns1-to-pg_master" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="171.8,820.9782,174.9059,811.6319,171.3138,816.0019,166.9438,812.4098,171.8,820.9782" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="25" x="165" y="708.8921">TCP</text><!--MD5=[e8717d616dcae733a792782d532ab608]
+link ns2 to pg_sync--><path d="M356.37,656.2882 C348.91,665.7482 341.92,676.7382 338,688.1982 C322.92,732.2982 345.47,783.8282 364.96,816.8382 " fill="none" id="ns2-to-pg_sync" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="367.57,821.1682,366.3695,811.3928,364.9975,816.8808,359.5096,815.5088,367.57,821.1682" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="62" x="339" y="708.8921">TCP (read)</text><!--MD5=[e8717d616dcae733a792782d532ab608]
+link ns2 to pg_sync--><!--MD5=[fdd24355511e262b214aee0c2e15e537]
+link ns3 to pg_async--><path d="M695.13,656.4782 C695.32,697.8782 695.65,771.9982 695.84,815.7282 " fill="none" id="ns3-to-pg_async" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="695.87,820.8982,699.8185,811.8755,695.8414,815.8983,691.8186,811.9212,695.87,820.8982" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="62" x="696" y="708.8921">TCP (read)</text><!--MD5=[fdd24355511e262b214aee0c2e15e537]
+link ns3 to pg_async--><!--MD5=[5fe2a5f7b1b337e5ad44f6a81e906d96]
+link user to cdn--><path d="M628.22,122.3382 C652.61,148.8482 683.28,182.5882 710,213.1982 C727.23,232.9482 746.25,255.6982 760.41,272.8382 " fill="none" id="user-to-cdn" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="763.9,277.0682,761.2528,267.5818,760.716,273.2131,755.0846,272.6763,763.9,277.0682" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="122" x="694" y="165.3921">Статический контент</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="144" x="683" y="180.3408">(JS, CSS, изображения)</text><!--MD5=[0b34816b2334b8a4547e067964834c3a]
+link user to alb--><path d="M542.01,122.3082 C504.22,165.1482 449.63,227.0582 416.05,265.1282 " fill="none" id="user-to-alb" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="412.47,269.1882,421.4234,265.0851,415.7776,265.4386,415.4241,259.7928,412.47,269.1882" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="75" x="515" y="172.8921">API-запросы</text><!--MD5=[1ef07f557ea6ed4be38b0988e2143c79]
+link alb to ns1--><path d="M352.18,331.2182 C328.43,353.4282 296.93,385.2482 274,417.1982 C233.8,473.2182 199.7,546.3882 181.4,589.0482 " fill="none" id="alb-to-ns1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="179.35,593.8482,186.5794,587.1598,181.3248,589.2547,179.2298,584.0001,179.35,593.8482" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="102" x="275" y="430.3921">HC: GET /healthz</text><!--MD5=[3baa5a729a4e6452245e6c8cc2bf8a6b]
+link alb to ns2--><path d="M386,331.2982 C386,391.1582 386,524.8982 386,588.8382 " fill="none" id="alb-to-ns2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="386,594.0582,390,585.0582,386,589.0582,382,585.0582,386,594.0582" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="102" x="387" y="430.3921">HC: GET /healthz</text><!--MD5=[1cb2fedd6c92fcce7a94e62b22fe43a3]
+link alb to ns3--><path d="M415.54,331.6682 C438.15,355.0282 470.1,388.0982 498,417.1982 C556.2,477.9182 623.71,548.9982 662.68,590.0882 " fill="none" id="alb-to-ns3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="666.36,593.9682,663.0863,584.6794,662.926,590.334,657.2715,590.1737,666.36,593.9682" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="102" x="509" y="430.3921">HC: GET /healthz</text><!--MD5=[c0f147dd2f4a493dfa5097d983d8d03d]
+link pg_master to pg_sync--><path d="M223.6,851.6982 C254.14,851.6982 293.79,851.6982 326.51,851.6982 " fill="none" id="pg_master-to-pg_sync" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="331.7,851.6982,322.7,847.6982,326.7,851.6982,322.7,855.6982,331.7,851.6982" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="72" x="241.75" y="830.8921">Синхронная</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="69" x="243.25" y="845.8408">репликация</text><!--MD5=[7fa0c5eef1db9df191995bf7eb54715c]
+link pg_master to pg_async--><path d="M199.06,821.1482 C224.54,791.3282 267.7,747.5582 316,727.1982 C387.52,697.0382 416,698.4082 490.5,720.1982 C555.22,739.1282 618.92,785.3682 657.83,817.6282 " fill="none" id="pg_master-to-pg_async" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="661.99,821.0982,657.6497,812.2573,658.1536,817.8917,652.5192,818.3956,661.99,821.0982" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="79" x="410.5" y="701.3921">Асинхронная</text><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="69" x="415.5" y="716.3408">репликация</text><!--MD5=[097630922a1295cd0a366611af98ca23]
+link ns2 to pg_master--><path d="M329.31,644.7482 C305.42,654.7182 278.65,668.9882 259,688.1982 C222.09,724.2682 198.19,780.0282 185.66,815.9382 " fill="none" id="ns2-to-pg_master" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="183.89,821.0882,190.5832,813.8632,185.5054,816.3564,183.0122,811.2786,183.89,821.0882" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="64" x="260" y="708.8921">TCP (write)</text><!--MD5=[462aa88d9199c085a9a259625e271305]
+link ns3 to pg_master--><path d="M645.9,656.2982 C607.46,678.1482 551.82,706.0882 499,719.1982 C459.49,729.0082 353.78,712.0382 316,727.1982 C269.03,746.0382 227.09,787.5682 201.41,817.2582 " fill="none" id="ns3-to-pg_master" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="198.05,821.1882,206.9441,816.9581,201.304,817.392,200.8701,811.7518,198.05,821.1882" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="64" x="583" y="708.8921">TCP (write)</text><rect fill="#DDDDDD" height="331.9727" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="506" x="165" y="1142.6855"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="305" x="171" y="1160.8174">Комментарии к архитектурным решениям:</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="0" x="175" y="1176.916"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="12" x="171" y="1193.0146">1.</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="260" x="187" y="1193.0146">Независимые кластеры Kubernetes</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="179" x="451" y="1193.0146">в каждой зоне доступности</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="445" x="183" y="1209.1133">(не растянутый кластер) — проще в управлении, отказ одной зоны</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="293" x="183" y="1225.2119">не влияет на control plane других кластеров.</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="0" x="175" y="1241.3105"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="12" x="171" y="1257.4092">2.</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="256" x="187" y="1257.4092">Шардирование БД не применяется:</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="154" x="447" y="1257.4092">объём данных 50 ГБ —</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="377" x="183" y="1273.5078">не превышает возможности одного сервера PostgreSQL.</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="0" x="175" y="1289.6064"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="12" x="171" y="1305.7051">3.</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="30" x="187" y="1305.7051">CDN</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="335" x="221" y="1305.7051">обеспечивает одинаковое время загрузки страниц</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="270" x="183" y="1321.8037">для пользователей из всех регионов РФ.</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="0" x="175" y="1337.9023"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="12" x="171" y="1354.001">4.</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="130" x="187" y="1354.001">Доступность 99.9%</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="162" x="321" y="1354.001">обеспечивается за счёт:</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="282" x="183" y="1370.0996">- Multi-AZ deployment (3 зоны доступности)</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="299" x="183" y="1386.1982">- Автоматический failover через ALB и Patroni</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="205" x="183" y="1402.2969">- Health checks на всех уровнях</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="0" x="175" y="1418.3955"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="12" x="171" y="1434.4941">5.</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="253" x="187" y="1434.4941">Горизонтальное масштабирование</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="221" x="444" y="1434.4941">выбрано как основная стратегия:</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="454" x="183" y="1450.5928">приложение масштабируется за счёт добавления подов в K8s (HPA)</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="330" x="183" y="1466.6914">и распределения нагрузки по зонам доступности.</text><!--MD5=[5639ca419ca25745ce4938745c78bb61]
+@startuml InsureTech_to_be
+
+title InsureTech — Технологическая архитектура (TO-BE)
+
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam rectangle {
+    BackgroundColor<<az>> #E8F0FE
+    BorderColor<<az>> #5282FF
+    BackgroundColor<<k8s>> #E8F5E9
+    BorderColor<<k8s>> #4CAF50
+    BackgroundColor<<vm>> #FFF3E0
+    BorderColor<<vm>> #FF9800
+}
+
+actor "Браузер\nпользователя" as user
+
+cloud "Yandex CDN" as cdn {
+}
+
+node "Yandex Application\nLoad Balancer (L7)" as alb
+
+' ========== Зона доступности 1 ==========
+rectangle "Зона доступности 1 (ru-central1-a)" <<az>> {
+
+    rectangle "Kubernetes cluster 1" <<k8s>> {
+        node "InsureTech\nnamespace" as ns1
+    }
+
+    rectangle "VM 1" <<vm>> {
+        database "PostgreSQL\n(Master)" as pg_master
+    }
+
+    ns1 -down-> pg_master : TCP
+}
+
+' ========== Зона доступности 2 ==========
+rectangle "Зона доступности 2 (ru-central1-b)" <<az>> {
+
+    rectangle "Kubernetes cluster 2" <<k8s>> {
+        node "InsureTech\nnamespace" as ns2
+    }
+
+    rectangle "VM 2" <<vm>> {
+        database "PostgreSQL\n(Sync Replica)" as pg_sync
+    }
+
+    ns2 -down-> pg_sync : "TCP (read)"
+    ns2 -[hidden]down-> pg_sync
+}
+
+' ========== Зона доступности 3 ==========
+rectangle "Зона доступности 3 (ru-central1-d)" <<az>> {
+
+    rectangle "Kubernetes cluster 3" <<k8s>> {
+        node "InsureTech\nnamespace" as ns3
+    }
+
+    rectangle "VM 3" <<vm>> {
+        database "PostgreSQL\n(Async Replica)" as pg_async
+    }
+
+    ns3 -down-> pg_async : "TCP (read)"
+    ns3 -[hidden]down-> pg_async
+}
+
+' ========== Связи ==========
+
+user - -> cdn : "Статический контент\n(JS, CSS, изображения)"
+user - -> alb : "API-запросы"
+
+alb - -> ns1 : "HC: GET /healthz"
+alb - -> ns2 : "HC: GET /healthz"
+alb - -> ns3 : "HC: GET /healthz"
+
+pg_master - -> pg_sync : "Синхронная\nрепликация"
+pg_master - -> pg_async : "Асинхронная\nрепликация"
+
+' ========== Записи от реплик идут к мастеру ==========
+ns2 ..> pg_master : "TCP (write)"
+ns3 ..> pg_master : "TCP (write)"
+
+' ========== Примечания ==========
+
+note right of alb
+  **Health Check:**
+  HTTP GET /healthz
+  Интервал: 10 сек
+  Таймаут: 5 сек
+  Порог отказа: 3 ошибки
+
+  **Фейловер-стратегия:**
+  Active-Active между зонами.
+  При отказе зоны ALB
+  перенаправляет трафик
+  в здоровые зоны.
+end note
+
+note bottom of pg_master
+  **Patroni** — автоматический
+  failover PostgreSQL.
+
+  RPO ≤ 15 мин:
+  - синхронная репликация в зону 2
+  - автоматические бэкапы каждые 15 мин
+
+  RTO ≤ 45 мин:
+  - автоматическое переключение
+    мастера через Patroni
+end note
+
+legend bottom
+  **Комментарии к архитектурным решениям:**
+
+  1. **Независимые кластеры Kubernetes** в каждой зоне доступности
+     (не растянутый кластер) — проще в управлении, отказ одной зоны
+     не влияет на control plane других кластеров.
+
+  2. **Шардирование БД не применяется:** объём данных 50 ГБ —
+     не превышает возможности одного сервера PostgreSQL.
+
+  3. **CDN** обеспечивает одинаковое время загрузки страниц
+     для пользователей из всех регионов РФ.
+
+  4. **Доступность 99.9%** обеспечивается за счёт:
+     - Multi-AZ deployment (3 зоны доступности)
+     - Автоматический failover через ALB и Patroni
+     - Health checks на всех уровнях
+
+  5. **Горизонтальное масштабирование** выбрано как основная стратегия:
+     приложение масштабируется за счёт добавления подов в K8s (HPA)
+     и распределения нагрузки по зонам доступности.
+endlegend
+
+@enduml
+
+@startuml InsureTech_to_be
+
+title InsureTech — Технологическая архитектура (TO-BE)
+
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam rectangle {
+    BackgroundColor<<az>> #E8F0FE
+    BorderColor<<az>> #5282FF
+    BackgroundColor<<k8s>> #E8F5E9
+    BorderColor<<k8s>> #4CAF50
+    BackgroundColor<<vm>> #FFF3E0
+    BorderColor<<vm>> #FF9800
+}
+
+actor "Браузер\nпользователя" as user
+
+cloud "Yandex CDN" as cdn {
+}
+
+node "Yandex Application\nLoad Balancer (L7)" as alb
+
+rectangle "Зона доступности 1 (ru-central1-a)" <<az>> {
+
+    rectangle "Kubernetes cluster 1" <<k8s>> {
+        node "InsureTech\nnamespace" as ns1
+    }
+
+    rectangle "VM 1" <<vm>> {
+        database "PostgreSQL\n(Master)" as pg_master
+    }
+
+    ns1 -down-> pg_master : TCP
+}
+
+rectangle "Зона доступности 2 (ru-central1-b)" <<az>> {
+
+    rectangle "Kubernetes cluster 2" <<k8s>> {
+        node "InsureTech\nnamespace" as ns2
+    }
+
+    rectangle "VM 2" <<vm>> {
+        database "PostgreSQL\n(Sync Replica)" as pg_sync
+    }
+
+    ns2 -down-> pg_sync : "TCP (read)"
+    ns2 -[hidden]down-> pg_sync
+}
+
+rectangle "Зона доступности 3 (ru-central1-d)" <<az>> {
+
+    rectangle "Kubernetes cluster 3" <<k8s>> {
+        node "InsureTech\nnamespace" as ns3
+    }
+
+    rectangle "VM 3" <<vm>> {
+        database "PostgreSQL\n(Async Replica)" as pg_async
+    }
+
+    ns3 -down-> pg_async : "TCP (read)"
+    ns3 -[hidden]down-> pg_async
+}
+
+
+user - -> cdn : "Статический контент\n(JS, CSS, изображения)"
+user - -> alb : "API-запросы"
+
+alb - -> ns1 : "HC: GET /healthz"
+alb - -> ns2 : "HC: GET /healthz"
+alb - -> ns3 : "HC: GET /healthz"
+
+pg_master - -> pg_sync : "Синхронная\nрепликация"
+pg_master - -> pg_async : "Асинхронная\nрепликация"
+
+ns2 ..> pg_master : "TCP (write)"
+ns3 ..> pg_master : "TCP (write)"
+
+
+note right of alb
+  **Health Check:**
+  HTTP GET /healthz
+  Интервал: 10 сек
+  Таймаут: 5 сек
+  Порог отказа: 3 ошибки
+
+  **Фейловер-стратегия:**
+  Active-Active между зонами.
+  При отказе зоны ALB
+  перенаправляет трафик
+  в здоровые зоны.
+end note
+
+note bottom of pg_master
+  **Patroni** — автоматический
+  failover PostgreSQL.
+
+  RPO ≤ 15 мин:
+  - синхронная репликация в зону 2
+  - автоматические бэкапы каждые 15 мин
+
+  RTO ≤ 45 мин:
+  - автоматическое переключение
+    мастера через Patroni
+end note
+
+legend bottom
+  **Комментарии к архитектурным решениям:**
+
+  1. **Независимые кластеры Kubernetes** в каждой зоне доступности
+     (не растянутый кластер) — проще в управлении, отказ одной зоны
+     не влияет на control plane других кластеров.
+
+  2. **Шардирование БД не применяется:** объём данных 50 ГБ —
+     не превышает возможности одного сервера PostgreSQL.
+
+  3. **CDN** обеспечивает одинаковое время загрузки страниц
+     для пользователей из всех регионов РФ.
+
+  4. **Доступность 99.9%** обеспечивается за счёт:
+     - Multi-AZ deployment (3 зоны доступности)
+     - Автоматический failover через ALB и Patroni
+     - Health checks на всех уровнях
+
+  5. **Горизонтальное масштабирование** выбрано как основная стратегия:
+     приложение масштабируется за счёт добавления подов в K8s (HPA)
+     и распределения нагрузки по зонам доступности.
+endlegend
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 13:25:05 MSK 2021)
+(MIT source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>
