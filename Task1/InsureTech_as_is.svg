@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="584px" preserveAspectRatio="none" style="width:439px;height:584px;" version="1.1" viewBox="0 0 439 584" width="439px" zoomAndPan="magnify"><defs><filter height="300%" id="f11cqosd3j0p92" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="Arial" font-size="18" lengthAdjust="spacing" textLength="430" x="2" y="16.8838">InsureTech — Технологическая архитектура (AS-IS)</text><!--MD5=[c72ca4c719ff099de7669e12d8a92101]
+cluster Зона доступности 1--><rect fill="#E8F0FE" filter="url(#f11cqosd3j0p92)" height="388" style="stroke:#5282FF;stroke-width:1.5;" width="212" x="115" y="184.1982"/><text fill="#000000" font-family="Arial" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="31" x="205.5" y="199.3301">«az»</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="137" x="152.5" y="215.4287">Зона доступности 1</text><!--MD5=[e4c07127e7480941dd045e4fdd262f35]
+cluster Kubernetes cluster 1--><rect fill="#E8F5E9" filter="url(#f11cqosd3j0p92)" height="129" style="stroke:#4CAF50;stroke-width:1.5;" width="164" x="139" y="243.1982"/><text fill="#000000" font-family="Arial" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="39" x="201.5" y="258.3301">«k8s»</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="148" x="147" y="274.4287">Kubernetes cluster 1</text><!--MD5=[a0b304744ad8b61525a5c34cc37fc8ae]
+cluster VM 1--><rect fill="#FFF3E0" filter="url(#f11cqosd3j0p92)" height="128" style="stroke:#FF9800;stroke-width:1.5;" width="130" x="156" y="420.1982"/><text fill="#000000" font-family="Arial" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="33" x="204.5" y="435.3301">«vm»</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="34" x="204" y="451.4287">VM 1</text><!--MD5=[bb306c58084cb68407bb59b29a7b0190]
+entity ns1--><polygon fill="#FEFECE" filter="url(#f11cqosd3j0p92)" points="164.5,304.1982,174.5,294.1982,277.5,294.1982,277.5,346.3955,267.5,356.3955,164.5,356.3955,164.5,304.1982" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="267.5" x2="277.5" y1="304.1982" y2="294.1982"/><line style="stroke:#000000;stroke-width:1.5;" x1="164.5" x2="267.5" y1="304.1982" y2="304.1982"/><line style="stroke:#000000;stroke-width:1.5;" x1="267.5" x2="267.5" y1="304.1982" y2="356.3955"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="71" x="179.5" y="327.3301">InsureTech</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="73" x="179.5" y="343.4287">namespace</text><!--MD5=[358e89297f090aa598af710b97232d4f]
+entity pg1--><path d="M172.5,481.1982 C172.5,471.1982 221,471.1982 221,471.1982 C221,471.1982 269.5,471.1982 269.5,481.1982 L269.5,522.3955 C269.5,532.3955 221,532.3955 221,532.3955 C221,532.3955 172.5,532.3955 172.5,522.3955 L172.5,481.1982 " fill="#FEFECE" filter="url(#f11cqosd3j0p92)" style="stroke:#000000;stroke-width:1.5;"/><path d="M172.5,481.1982 C172.5,491.1982 221,491.1982 221,491.1982 C221,491.1982 269.5,491.1982 269.5,481.1982 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="77" x="182.5" y="508.3301">PostgreSQL</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="53" x="182.5" y="524.4287">(master)</text><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><ellipse cx="221" cy="34.6982" fill="#FEFECE" filter="url(#f11cqosd3j0p92)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M221,42.6982 L221,69.6982 M208,50.6982 L234,50.6982 M221,69.6982 L208,84.6982 M221,69.6982 L234,84.6982 " fill="none" filter="url(#f11cqosd3j0p92)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="54" x="175" y="103.3301">Браузер</text><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="92" x="175" y="119.4287">пользователя</text><!--MD5=[1dd448e3c4544565e96399848dfbd0ff]
+link user to ns1--><path d="M221,122.2182 C221,170.8582 221,245.3182 221,288.9482 " fill="none" id="user-to-ns1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="221,294.1082,225,285.1082,221,289.1082,217,285.1082,221,294.1082" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="32" x="222" y="165.3921">HTTP</text><!--MD5=[f39586a197931e50ff1cc879f00ea8b8]
+link ns1 to pg1--><path d="M221,356.5982 C221,386.9582 221,433.6082 221,465.5482 " fill="none" id="ns1-to-pg1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="221,470.9382,225,461.9382,221,465.9382,217,461.9382,221,470.9382" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacing" textLength="25" x="222" y="401.3921">TCP</text><!--MD5=[f6dcecc2171c1c9d517c23b65666ec43]
+@startuml InsureTech_as_is
+
+
+title InsureTech — Технологическая архитектура (AS-IS)
+
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam rectangle {
+    BackgroundColor<<az>> #E8F0FE
+    BorderColor<<az>> #5282FF
+    BackgroundColor<<k8s>> #E8F5E9
+    BorderColor<<k8s>> #4CAF50
+    BackgroundColor<<vm>> #FFF3E0
+    BorderColor<<vm>> #FF9800
+}
+
+actor "Браузер\nпользователя" as user
+
+rectangle "Зона доступности 1" <<az>> {
+
+    rectangle "Kubernetes cluster 1" <<k8s>> {
+        node "InsureTech\nnamespace" as ns1
+    }
+
+    rectangle "VM 1" <<vm>> {
+        database "PostgreSQL\n(master)" as pg1
+    }
+}
+
+user - -> ns1 : HTTP
+ns1 - -> pg1 : TCP
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 13:25:05 MSK 2021)
+(MIT source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>

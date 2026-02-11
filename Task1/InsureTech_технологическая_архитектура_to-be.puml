@@ -1,0 +1,135 @@
+@startuml InsureTech_to_be
+
+title InsureTech — Технологическая архитектура (TO-BE)
+
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam rectangle {
+    BackgroundColor<<az>> #E8F0FE
+    BorderColor<<az>> #5282FF
+    BackgroundColor<<k8s>> #E8F5E9
+    BorderColor<<k8s>> #4CAF50
+    BackgroundColor<<vm>> #FFF3E0
+    BorderColor<<vm>> #FF9800
+}
+
+actor "Браузер\nпользователя" as user
+
+cloud "Yandex CDN" as cdn {
+}
+
+node "Yandex Application\nLoad Balancer (L7)" as alb
+
+' ========== Зона доступности 1 ==========
+rectangle "Зона доступности 1 (ru-central1-a)" <<az>> {
+
+    rectangle "Kubernetes cluster 1" <<k8s>> {
+        node "InsureTech\nnamespace" as ns1
+    }
+
+    rectangle "VM 1" <<vm>> {
+        database "PostgreSQL\n(Master)" as pg_master
+    }
+
+    ns1 -down-> pg_master : TCP
+}
+
+' ========== Зона доступности 2 ==========
+rectangle "Зона доступности 2 (ru-central1-b)" <<az>> {
+
+    rectangle "Kubernetes cluster 2" <<k8s>> {
+        node "InsureTech\nnamespace" as ns2
+    }
+
+    rectangle "VM 2" <<vm>> {
+        database "PostgreSQL\n(Sync Replica)" as pg_sync
+    }
+
+    ns2 -down-> pg_sync : "TCP (read)"
+    ns2 -[hidden]down-> pg_sync
+}
+
+' ========== Зона доступности 3 ==========
+rectangle "Зона доступности 3 (ru-central1-d)" <<az>> {
+
+    rectangle "Kubernetes cluster 3" <<k8s>> {
+        node "InsureTech\nnamespace" as ns3
+    }
+
+    rectangle "VM 3" <<vm>> {
+        database "PostgreSQL\n(Async Replica)" as pg_async
+    }
+
+    ns3 -down-> pg_async : "TCP (read)"
+    ns3 -[hidden]down-> pg_async
+}
+
+' ========== Связи ==========
+
+user --> cdn : "Статический контент\n(JS, CSS, изображения)"
+user --> alb : "API-запросы"
+
+alb --> ns1 : "HC: GET /healthz"
+alb --> ns2 : "HC: GET /healthz"
+alb --> ns3 : "HC: GET /healthz"
+
+pg_master --> pg_sync : "Синхронная\nрепликация"
+pg_master --> pg_async : "Асинхронная\nрепликация"
+
+' ========== Записи от реплик идут к мастеру ==========
+ns2 ..> pg_master : "TCP (write)"
+ns3 ..> pg_master : "TCP (write)"
+
+' ========== Примечания ==========
+
+note right of alb
+  **Health Check:**
+  HTTP GET /healthz
+  Интервал: 10 сек
+  Таймаут: 5 сек
+  Порог отказа: 3 ошибки
+
+  **Фейловер-стратегия:**
+  Active-Active между зонами.
+  При отказе зоны ALB
+  перенаправляет трафик
+  в здоровые зоны.
+end note
+
+note bottom of pg_master
+  **Patroni** — автоматический
+  failover PostgreSQL.
+
+  RPO ≤ 15 мин:
+  - синхронная репликация в зону 2
+  - автоматические бэкапы каждые 15 мин
+
+  RTO ≤ 45 мин:
+  - автоматическое переключение
+    мастера через Patroni
+end note
+
+legend bottom
+  **Комментарии к архитектурным решениям:**
+
+  1. **Независимые кластеры Kubernetes** в каждой зоне доступности
+     (не растянутый кластер) — проще в управлении, отказ одной зоны
+     не влияет на control plane других кластеров.
+
+  2. **Шардирование БД не применяется:** объём данных 50 ГБ —
+     не превышает возможности одного сервера PostgreSQL.
+
+  3. **CDN** обеспечивает одинаковое время загрузки страниц
+     для пользователей из всех регионов РФ.
+
+  4. **Доступность 99.9%** обеспечивается за счёт:
+     - Multi-AZ deployment (3 зоны доступности)
+     - Автоматический failover через ALB и Patroni
+     - Health checks на всех уровнях
+
+  5. **Горизонтальное масштабирование** выбрано как основная стратегия:
+     приложение масштабируется за счёт добавления подов в K8s (HPA)
+     и распределения нагрузки по зонам доступности.
+endlegend
+
+@enduml
